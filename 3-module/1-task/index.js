@@ -7,5 +7,3 @@ function namify(users) {
   return users.map(users => users.name);
 }
 let names = namify(users); 
-
-console.log(namify(users));

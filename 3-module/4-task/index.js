@@ -7,7 +7,7 @@ function showSalary(users, age) {
 let user1 = {
   "balance": "$7,825.65",
   "picture": "https://placehold.it/32x32",
-  "age": 21,
+  "age": 40,
   "name": "Golden Branch",
   "gender": "male",
   "greeting": "Hello, Golden Branch! You have 7 unread messages.",
@@ -17,7 +17,7 @@ let user1 = {
 let user2 = {
   "balance": "$6,825.65",
   "picture": "https://placehold.it/32x32",
-  "age": 24,
+  "age": 30,
   "name": "Ольга Петрова",
   "gender": "female",
   "greeting": "Hello, Ольга! You have 7 unread messages.",
@@ -46,9 +46,3 @@ let user4 = {
   "greeting": "Hello, Василий! You have 7 unread messages.",
   "favouriteFruit": "banana"
 };
-
-let users = [user1, user2, user3, user4];
-
-console.log(showSalary(users, 30)); 
-
-console.log(showSalary(users, 40));
