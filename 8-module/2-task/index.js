@@ -1,5 +1,5 @@
 import createElement from '../../assets/lib/create-element.js';
-import ProductCard from './ProductCard.js';
+import ProductCard from '../../6-module/2-task/index.js';
 
 export default class ProductGrid {
   constructor(products) {
@@ -31,7 +31,7 @@ export default class ProductGrid {
   getFilteredProducts() {
     return this.products.filter(product => {
       // Фильтр по орехам
-      if (this.filters.noNuts && (product.nuts === true || product.nuts === undefined)) {
+      if (this.filters.noNuts && product.nuts === true) {
         return false;
       }
 
@@ -41,8 +41,8 @@ export default class ProductGrid {
       }
 
       // Фильтр по остроте
-      if (this.filters.maxSpiciness !== undefined && 
-          (product.spiciness > this.filters.maxSpiciness)) {
+      if (this.filters.maxSpiciness !== undefined &&
+        (product.spiciness > this.filters.maxSpiciness)) {
         return false;
       }
 
